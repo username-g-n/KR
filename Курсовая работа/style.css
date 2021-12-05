@@ -1,0 +1,298 @@
+html
+{
+    display: flex;
+    justify-content:flex-start;
+  height: 100%;
+}
+
+body
+{
+/**/
+  /*все пространство*/  
+    
+background: #608965;
+color: black;
+padding: 0;
+margin-top: 10px;
+min-width:720px;
+max-width: 2000px;
+
+display: flex;
+width:100%
+
+}
+
+inside
+{
+  display: flex;
+  flex: 0 0 auto;
+  
+ width:100%; 
+}
+.lr
+{
+    margin-top: 150px;
+    width:10px;
+}
+
+
+
+change
+{
+  display: flex;
+  height: auto;
+  flex-direction: column;  
+    background-color: white;
+   width:100%;
+}
+
+
+
+.header
+{
+    
+height:360px;
+display: flex;
+flex: 0 0 auto;
+justify-content: space-around;
+align-items: center;
+background-color: #000000;
+/*border-bottom: 1px inset #0009eb;
+border-left: 0px inset #000;
+border-right: 0px inset #000;
+border-top: 1px inset #0009eb;
+покраска заголовка */
+flex-direction: column;
+color: #fff;
+background-color: #608965;
+}
+.top1
+{
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top: 1px inset #fff;
+    background-color: black;
+    display: flex;
+     
+  align-items:flex-start;
+    height:80px;
+    width:100%
+   
+}
+.imagetop
+{
+  
+    background-color: #aaffaa;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    height:180px;
+    width:100%;
+}
+.top2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    width:100%;
+    background: url(img/gras.jpg);
+    color: black;
+    
+}
+.vertbox
+{
+  
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+   align-items: center;
+   
+}
+section
+{
+    display: flex;
+    background-color: white;
+   flex: 1 0 auto;
+    flex-direction: row;
+        
+}
+
+
+.left
+{
+    display: flex;
+    flex-direction: column;
+    width:150px;
+    height: auto;
+    background-color: #71BC78;
+ 
+    color:black
+    
+}
+
+
+.oglav
+{
+    
+    display: flex;
+    flex-direction: column;
+    width:150px; 
+    height:300px;
+    
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.right
+{
+    
+    display: flex;
+    height:auto;
+    background-color: #ceffce;
+    color: black;
+    flex-direction:column;
+    
+   
+  
+}
+
+.horbox
+{
+    border-bottom:2px solid #9b7147; 
+    display: flex;
+     flex-direction: row;
+    
+}
+.imagemain
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    min-width: 240px;
+    background-color: #ceffce;
+}
+.text-container
+{
+    
+    background-color: #ceffce;
+  width: 60%;
+    
+}
+footer
+{
+height:40px;
+border-bottom-left-radius: 30px;
+border-bottom-right-radius: 30px;
+display: flex;
+flex: 0 0 auto;
+justify-content: center;
+align-items: center;
+background-color: #000000;
+color: #808080;
+}
+
+
+
+.colorButton
+{
+  
+  background-color: #000;
+  border-radius: 1em;
+  border: 0em solid #000;
+  width: 10em;
+  height: 10em;
+}
+
+
+
+
+.borderButton
+{
+	
+	font-family: fantasy;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+  margin: 5px;
+  
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  width: 130px;
+  height: 40px;
+}
+.borderButton:hover/*наведение*/
+{
+	background: #83cc6e;
+  border: 1px solid #9b7147;
+  transition: border 0.5s;
+}
+.borderButton:active
+{
+	background: green;
+    color: #fff;
+border: 1px solid #9b7147;
+transition: all 0.5s;
+}
+
+
+
+#size
+{
+    width: 40px;
+    height: 40px;
+    
+    align-items:flex-end;
+    justify-content: flex-start;
+    
+}
+#size:hover 
+{
+    transform: scale(1.2);
+    transition: all .5s;
+}
+#size:not(:hover)
+{
+    transform: scale(1);
+    transition: all .5s;
+}
+
+
+
+/*внизу прокрутка вверх*/
+
+#arrowTop {
+height: 9px;
+width: 14px;
+color: blue;
+position: fixed;
+right: 20px;
+bottom: 30px;
+cursor: pointer;
+}
+
+#arrowTop::before {
+
+}
+
+    
+/*внизу слайдер картинок*/
+
+.slider {
+    height: 180px;
+    overflow: hidden;
+}
+
+.slider-line {
+   width: 2000px;
+    height: 180px;
+    display: flex;
+    background: green;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
